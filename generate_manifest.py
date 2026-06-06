@@ -20,7 +20,9 @@ OUT_PATH = os.path.join(HERE, "manifest.json")
 
 DATE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})\.md$")
 H1_RE = re.compile(r"^#\s+(.+?)\s*$")
-BOLD_ITEM_RE = re.compile(r"\*\*(.+?)\*\*")
+NUM_ITEM_RE = re.compile(r"^\*\*\d+\.\s+(.+?)\*\*")  # e.g. "**1. Headline**"
+SKIP_PREFIXES = ("---", ">", "**Generated", "**Sources",
+                 "*Report cost", "*Data sources", "*Generated")
 
 
 def clean(text: str) -> str:
@@ -40,6 +42,7 @@ def extract_title_and_preview(path: str, fallback: str):
     except OSError:
         return title, preview
 
+    fallback = ""
     got_title = False
     for line in lines:
         s = line.strip()
@@ -49,16 +52,21 @@ def extract_title_and_preview(path: str, fallback: str):
                 title = clean(m.group(1))
                 got_title = True
             continue
-        # After the title, find the first meaningful line for the preview.
-        if not s or s.startswith("**Generated") or s.startswith("---") \
-                or s.startswith("**Sources") or s.startswith(">"):
+        if not s or s.startswith(SKIP_PREFIXES):
             continue
+        # Best preview: the first numbered "Top 5" headline.
+        num = NUM_ITEM_RE.match(s)
+        if num:
+            preview = clean(num.group(1))
+            break
         if s.startswith("#"):
             continue
-        bold = BOLD_ITEM_RE.search(s)
-        preview = clean(bold.group(1)) if bold else clean(s)
-        if preview:
-            break
+        # Fallback: first meaningful full line (keeps text after a bold label,
+        # so "**Note:** Light signal day…" becomes a useful preview).
+        if not fallback:
+            fallback = clean(s)
+    if not preview:
+        preview = fallback
 
     if len(preview) > 160:
         preview = preview[:157].rstrip() + "…"
