@@ -73,6 +73,21 @@ body {
   padding-bottom: calc(24px + var(--safe-b));
 }
 
+/* ---------- Freshness badge ---------- */
+.freshness {
+  display: block;
+  margin: 0 2px 14px;
+  padding: 9px 14px;
+  border-radius: 10px;
+  font-size: 13.5px;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+}
+.freshness.fresh-ok    { color: #b7d77a; border-color: #3a4a2a; background: #161c12; }
+.freshness.fresh-warn  { color: var(--accent); border-color: #4a3a20; background: #1c160e; }
+.freshness.fresh-stale { color: #ff8f8f; border-color: #4a2626; background: #1c1010; }
+
 /* ---------- Report list ---------- */
 .report-list { display: flex; flex-direction: column; gap: 12px; }
 .card {

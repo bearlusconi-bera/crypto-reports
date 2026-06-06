@@ -45,6 +45,31 @@
     window.scrollTo(0, 0);
   }
 
+  function daysBetween(dateStr) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dateStr || "");
+    if (!m) return null;
+    var then = Date.UTC(+m[1], +m[2] - 1, +m[3]);
+    var now = new Date();
+    var today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+    return Math.round((today - then) / 86400000);
+  }
+
+  function renderFreshness(latest) {
+    var el = els.freshness;
+    if (!el) return;
+    var d = daysBetween(latest);
+    el.className = "freshness";
+    if (d === null) { el.hidden = true; return; }
+    el.hidden = false;
+    var label, cls;
+    if (d <= 0) { label = "Updated today"; cls = "fresh-ok"; }
+    else if (d === 1) { label = "Updated yesterday"; cls = "fresh-ok"; }
+    else if (d <= 3) { label = "Updated " + d + " days ago"; cls = "fresh-warn"; }
+    else { label = "⚠ No new report in " + d + " days"; cls = "fresh-stale"; }
+    el.classList.add(cls);
+    el.textContent = "Latest: " + fmtDate(latest) + " · " + label;
+  }
+
   function renderList() {
     var list = els.reportList;
     list.innerHTML = "";
@@ -53,6 +78,8 @@
       return;
     }
     setStatus("");
+    renderFreshness(manifest.latest ||
+      (manifest.reports[0] && manifest.reports[0].date));
 
     var daily = manifest.reports.filter(function (r) { return r.type !== "other"; });
     var other = manifest.reports.filter(function (r) { return r.type === "other"; });
@@ -104,15 +131,25 @@
 
   function renderMarkdown(md) {
     var html = window.marked.parse(md, { gfm: true, breaks: false });
-    if (window.DOMPurify) {
-      html = window.DOMPurify.sanitize(html, { ADD_ATTR: ["target"] });
+    // Sanitization is mandatory — never inject unsanitized HTML.
+    if (!window.DOMPurify || typeof window.DOMPurify.sanitize !== "function") {
+      throw new Error("sanitizer unavailable");
     }
-    return html;
+    return window.DOMPurify.sanitize(html, { ADD_ATTR: ["target"] });
   }
 
   function openReport(id) {
     var r = findReport(id);
-    if (!r) { setStatus("Report not found."); showList(); return; }
+    // Deep-link fallback: if the manifest failed to load but the hash looks
+    // like a valid report id, still try to fetch the markdown directly.
+    if (!r) {
+      if (!manifest && /^[\w.-]+$/.test(id)) {
+        r = { id: id, date: /^\d{4}-\d{2}-\d{2}$/.test(id) ? id : "",
+              file: id + ".md", title: id, type: "daily" };
+      } else {
+        setStatus("Report not found."); showList(); return;
+      }
+    }
 
     els.listView.hidden = true;
     els.reportView.hidden = false;
@@ -166,7 +203,8 @@
     els = {
       main: $("main"), listView: $("listView"), reportView: $("reportView"),
       reportList: $("reportList"), backBtn: $("backBtn"), title: $("title"),
-      count: $("count"), status: $("status"), repoLink: $("repoLink")
+      count: $("count"), status: $("status"), repoLink: $("repoLink"),
+      freshness: $("freshness")
     };
     els.repoLink.href = REPO_URL;
     els.backBtn.addEventListener("click", function () {
@@ -188,14 +226,18 @@
       })
       .catch(function (err) {
         setStatus("Could not load manifest.json: " + err.message);
+        route(); // allow deep-link fallback even if the index failed to load
       });
   }
 
-  // marked/DOMPurify are deferred; ensure they're present before booting.
+  // marked + DOMPurify are deferred; require BOTH before booting so markdown is
+  // never rendered without sanitization.
   function whenLibsReady(fn, tries) {
     tries = tries || 0;
-    if (window.marked && typeof window.marked.parse === "function") return fn();
-    if (tries > 100) { setStatus("Failed to load markdown library."); return; }
+    var ready = window.marked && typeof window.marked.parse === "function" &&
+      window.DOMPurify && typeof window.DOMPurify.sanitize === "function";
+    if (ready) return fn();
+    if (tries > 100) { setStatus("Failed to load required libraries."); return; }
     setTimeout(function () { whenLibsReady(fn, tries + 1); }, 50);
   }
 

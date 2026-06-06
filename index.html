@@ -7,11 +7,19 @@
   <meta name="color-scheme" content="dark light" />
   <title>Daily Crypto Reports</title>
   <meta name="description" content="Daily crypto market intelligence reports." />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%88%3C/text%3E%3C/svg%3E" />
+
+  <!-- Add to Home Screen / PWA -->
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Crypto Reports" />
+  <link rel="icon" type="image/png" href="./icon-512.png" />
+  <link rel="apple-touch-icon" href="./icon-512.png" />
+
   <link rel="stylesheet" href="./style.css" />
-  <!-- Markdown renderer + sanitizer (pinned versions, loaded from CDN) -->
-  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js" defer></script>
+  <!-- Markdown renderer + sanitizer (vendored locally — no runtime CDN dependency) -->
+  <script src="./vendor/marked.min.js" defer></script>
+  <script src="./vendor/purify.min.js" defer></script>
   <script src="./app.js" defer></script>
 </head>
 <body>
@@ -24,6 +32,7 @@
   <main id="main">
     <!-- List view -->
     <section id="listView" class="list-view">
+      <div id="freshness" class="freshness" hidden></div>
       <div id="reportList" class="report-list" aria-live="polite"></div>
     </section>
 
