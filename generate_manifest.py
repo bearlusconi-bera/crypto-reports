@@ -13,7 +13,6 @@ import json
 import os
 import re
 import sys
-from datetime import datetime, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPORTS_DIR = os.path.join(HERE, "reports")
@@ -94,8 +93,11 @@ def build():
     daily.sort(key=lambda r: r["date"], reverse=True)
     other.sort(key=lambda r: r["file"], reverse=True)
 
+    # "latest" is content-derived (newest report date), NOT wall-clock time,
+    # so re-running with no new reports produces an identical manifest and
+    # publish.sh can truly no-op.
     manifest = {
-        "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "latest": daily[0]["date"] if daily else "",
         "count": len(daily) + len(other),
         "reports": daily + other,
     }
