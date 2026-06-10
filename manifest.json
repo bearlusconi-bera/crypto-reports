@@ -1,7 +1,15 @@
 {
-  "latest": "2026-06-09",
-  "count": 57,
+  "latest": "2026-06-10",
+  "count": 58,
   "reports": [
+    {
+      "id": "2026-06-10",
+      "date": "2026-06-10",
+      "file": "2026-06-10.md",
+      "title": "Daily Crypto Market Report — 2026-06-10",
+      "preview": "Morpho Raises $175M Led by a16z Crypto, Paradigm & Ribbit Capital at ~$2B Valuation",
+      "type": "daily"
+    },
     {
       "id": "2026-06-09",
       "date": "2026-06-09",
