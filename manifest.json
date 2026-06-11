@@ -1,7 +1,15 @@
 {
-  "latest": "2026-06-10",
-  "count": 58,
+  "latest": "2026-06-11",
+  "count": 59,
   "reports": [
+    {
+      "id": "2026-06-11",
+      "date": "2026-06-11",
+      "file": "2026-06-11.md",
+      "title": "Daily Crypto Market Report — 2026-06-11",
+      "preview": "Mastercard Launches Agent Pay for Machines (AP4M) — 30+ Partners Including Coinbase, Solana, Aave",
+      "type": "daily"
+    },
     {
       "id": "2026-06-10",
       "date": "2026-06-10",
