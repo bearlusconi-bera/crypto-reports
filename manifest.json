@@ -1,7 +1,15 @@
 {
-  "latest": "2026-06-11",
-  "count": 59,
+  "latest": "2026-06-12",
+  "count": 60,
   "reports": [
+    {
+      "id": "2026-06-12",
+      "date": "2026-06-12",
+      "file": "2026-06-12.md",
+      "title": "Daily Crypto Market Report — 2026-06-12",
+      "preview": "SpaceX IPO Goes Onchain — Multiple Protocols Race for Day-One Tokenization",
+      "type": "daily"
+    },
     {
       "id": "2026-06-11",
       "date": "2026-06-11",
