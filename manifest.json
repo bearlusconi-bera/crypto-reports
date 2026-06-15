@@ -1,7 +1,15 @@
 {
-  "latest": "2026-06-14",
-  "count": 62,
+  "latest": "2026-06-15",
+  "count": 63,
   "reports": [
+    {
+      "id": "2026-06-15",
+      "date": "2026-06-15",
+      "file": "2026-06-15.md",
+      "title": "Daily Crypto Market Report — 2026-06-15",
+      "preview": "BTC +3.5%, ETH +8.7% — Strongest Weekend Rally in Weeks",
+      "type": "daily"
+    },
     {
       "id": "2026-06-14",
       "date": "2026-06-14",
