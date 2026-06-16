@@ -1,7 +1,15 @@
 {
-  "latest": "2026-06-15",
-  "count": 63,
+  "latest": "2026-06-16",
+  "count": 64,
   "reports": [
+    {
+      "id": "2026-06-16",
+      "date": "2026-06-16",
+      "file": "2026-06-16.md",
+      "title": "Daily Crypto Market Report — 2026-06-16",
+      "preview": "Standard Chartered Issues Uniswap Research: $100 UNI Price Target by 2030",
+      "type": "daily"
+    },
     {
       "id": "2026-06-15",
       "date": "2026-06-15",
