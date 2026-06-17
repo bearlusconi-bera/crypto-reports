@@ -1,7 +1,15 @@
 {
-  "latest": "2026-06-16",
-  "count": 64,
+  "latest": "2026-06-17",
+  "count": 65,
   "reports": [
+    {
+      "id": "2026-06-17",
+      "date": "2026-06-17",
+      "file": "2026-06-17.md",
+      "title": "Daily Crypto Market Report — 2026-06-17",
+      "preview": "Ondo Partners with Mirae Asset — Korea's Largest Asset Manager Goes Onchain",
+      "type": "daily"
+    },
     {
       "id": "2026-06-16",
       "date": "2026-06-16",
