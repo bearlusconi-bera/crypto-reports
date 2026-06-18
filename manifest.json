@@ -1,7 +1,15 @@
 {
-  "latest": "2026-06-17",
-  "count": 65,
+  "latest": "2026-06-18",
+  "count": 66,
   "reports": [
+    {
+      "id": "2026-06-18",
+      "date": "2026-06-18",
+      "file": "2026-06-18.md",
+      "title": "Daily Crypto Market Report — 2026-06-18",
+      "preview": "Ethena Bridges DeFi Yield and Wall Street Credit — USDe Adds AAA CLOs via Janus Henderson + Securitize",
+      "type": "daily"
+    },
     {
       "id": "2026-06-17",
       "date": "2026-06-17",
