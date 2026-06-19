@@ -1,7 +1,15 @@
 {
-  "latest": "2026-06-18",
-  "count": 66,
+  "latest": "2026-06-19",
+  "count": 67,
   "reports": [
+    {
+      "id": "2026-06-19",
+      "date": "2026-06-19",
+      "file": "2026-06-19.md",
+      "title": "Daily Crypto Market Report — 2026-06-19",
+      "preview": "CME Sues the CFTC Over Kalshi's Bitcoin Perpetual Futures",
+      "type": "daily"
+    },
     {
       "id": "2026-06-18",
       "date": "2026-06-18",
