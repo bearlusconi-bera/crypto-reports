@@ -1,7 +1,15 @@
 {
-  "latest": "2026-06-20",
-  "count": 68,
+  "latest": "2026-06-22",
+  "count": 69,
   "reports": [
+    {
+      "id": "2026-06-22",
+      "date": "2026-06-22",
+      "file": "2026-06-22.md",
+      "title": "Daily Crypto Market Report — 2026-06-22",
+      "preview": "Ondo Finance: Tokenization Wave Hits Inflection — DTCC, Banks, State Street, 430+ Assets",
+      "type": "daily"
+    },
     {
       "id": "2026-06-20",
       "date": "2026-06-20",
