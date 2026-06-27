@@ -1,7 +1,15 @@
 {
-  "latest": "2026-06-26",
-  "count": 70,
+  "latest": "2026-06-27",
+  "count": 71,
   "reports": [
+    {
+      "id": "2026-06-27",
+      "date": "2026-06-27",
+      "file": "2026-06-27.md",
+      "title": "Daily Crypto Market Report — 2026-06-27",
+      "preview": "U.S. Strikes Iran After Strait of Hormuz Drone Attack — Ceasefire in Jeopardy",
+      "type": "daily"
+    },
     {
       "id": "2026-06-26",
       "date": "2026-06-26",
