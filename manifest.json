@@ -1,6 +1,6 @@
 {
   "latest": "2026-06-28",
-  "count": 72,
+  "count": 75,
   "reports": [
     {
       "id": "2026-06-28",
@@ -24,6 +24,30 @@
       "file": "2026-06-26.md",
       "title": "Daily Crypto Market Report — 2026-06-26",
       "preview": "Base Mainnet Halted and Recovered — Major L2 Outage",
+      "type": "daily"
+    },
+    {
+      "id": "2026-06-25",
+      "date": "2026-06-25",
+      "file": "2026-06-25.md",
+      "title": "Daily Crypto Market Report — 2026-06-25",
+      "preview": "Bitcoin Crashes Below $60K: $696M ETF Outflow + $397M Liquidation Cascade",
+      "type": "daily"
+    },
+    {
+      "id": "2026-06-24",
+      "date": "2026-06-24",
+      "file": "2026-06-24.md",
+      "title": "Daily Crypto Market Report — 2026-06-24",
+      "preview": "| Asset | Price | 1d % |",
+      "type": "daily"
+    },
+    {
+      "id": "2026-06-23",
+      "date": "2026-06-23",
+      "file": "2026-06-23.md",
+      "title": "Daily Crypto Market Report — 2026-06-23",
+      "preview": "Ethereum Foundation restructures: 20% staff cut, 40% budget reduction, Ethlabs launches with $11B backing",
       "type": "daily"
     },
     {
