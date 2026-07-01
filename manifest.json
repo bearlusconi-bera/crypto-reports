@@ -1,7 +1,15 @@
 {
-  "latest": "2026-06-28",
-  "count": 75,
+  "latest": "2026-07-01",
+  "count": 76,
   "reports": [
+    {
+      "id": "2026-07-01",
+      "date": "2026-07-01",
+      "file": "2026-07-01.md",
+      "title": "Daily Crypto Market Report — 2026-07-01",
+      "preview": "Open USD (OUSD) Launches With 140+ Corporate Backers Including Visa, Mastercard, Stripe, BlackRock, Coinbase",
+      "type": "daily"
+    },
     {
       "id": "2026-06-28",
       "date": "2026-06-28",
