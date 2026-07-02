@@ -1,7 +1,15 @@
 {
-  "latest": "2026-07-01",
-  "count": 76,
+  "latest": "2026-07-02",
+  "count": 77,
   "reports": [
+    {
+      "id": "2026-07-02",
+      "date": "2026-07-02",
+      "file": "2026-07-02.md",
+      "title": "Daily Crypto Market Report — 2026-07-02",
+      "preview": "Robinhood Launches Its Own Blockchain — Uniswap, Morpho, Ethena, MidasRWA Onboard Day One",
+      "type": "daily"
+    },
     {
       "id": "2026-07-01",
       "date": "2026-07-01",
