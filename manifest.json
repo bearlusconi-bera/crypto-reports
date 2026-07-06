@@ -1,7 +1,15 @@
 {
-  "latest": "2026-07-05",
-  "count": 80,
+  "latest": "2026-07-06",
+  "count": 81,
   "reports": [
+    {
+      "id": "2026-07-06",
+      "date": "2026-07-06",
+      "file": "2026-07-06.md",
+      "title": "Daily Crypto Market Report — 2026-07-06",
+      "preview": "Strategy Sells $225M More BTC — Bitcoin Slides to $61.8K",
+      "type": "daily"
+    },
     {
       "id": "2026-07-05",
       "date": "2026-07-05",
