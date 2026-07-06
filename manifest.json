@@ -1,7 +1,15 @@
 {
-  "latest": "2026-07-02",
-  "count": 77,
+  "latest": "2026-07-05",
+  "count": 80,
   "reports": [
+    {
+      "id": "2026-07-05",
+      "date": "2026-07-05",
+      "file": "2026-07-05.md",
+      "title": "Daily Crypto Market Report — 2026-07-05",
+      "preview": "Vitalik Drops \"Lean Ethereum\" Roadmap From Berlin Researcher Meeting",
+      "type": "daily"
+    },
     {
       "id": "2026-07-02",
       "date": "2026-07-02",
@@ -608,6 +616,22 @@
       "file": "2026-45-DAY-SUMMARY.md",
       "title": "45-Day Crypto Summary — April 18 to June 2, 2026",
       "preview": "Period: April 18 - June 2, 2026",
+      "type": "other"
+    },
+    {
+      "id": "2026-07-03-to-05",
+      "date": "",
+      "file": "2026-07-03-to-05.md",
+      "title": "Daily Crypto Market Report — July 3-5, 2026 (Combined Edition)",
+      "preview": "Vitalik Drops \"Lean Ethereum\" Roadmap From Berlin Researcher Meeting",
+      "type": "other"
+    },
+    {
+      "id": "2026-06-22-to-07-05-14-DAY-REPORT",
+      "date": "",
+      "file": "2026-06-22-to-07-05-14-DAY-REPORT.md",
+      "title": "Crypto Market Intelligence — 14-Day Mega Report",
+      "preview": "Robinhood Chain launched — the biggest distribution event in DeFi history",
       "type": "other"
     },
     {
