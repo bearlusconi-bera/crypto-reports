@@ -1,7 +1,15 @@
 {
-  "latest": "2026-07-06",
-  "count": 81,
+  "latest": "2026-07-07",
+  "count": 82,
   "reports": [
+    {
+      "id": "2026-07-07",
+      "date": "2026-07-07",
+      "file": "2026-07-07.md",
+      "title": "Daily Crypto Market Report — 2026-07-07",
+      "preview": "Vitalik Publishes \"Extremely Lean Chain\" — Ethereum's Most Radical Simplification Proposal Yet",
+      "type": "daily"
+    },
     {
       "id": "2026-07-06",
       "date": "2026-07-06",
