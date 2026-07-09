@@ -1,7 +1,15 @@
 {
-  "latest": "2026-07-08",
-  "count": 83,
+  "latest": "2026-07-09",
+  "count": 84,
   "reports": [
+    {
+      "id": "2026-07-09",
+      "date": "2026-07-09",
+      "file": "2026-07-09.md",
+      "title": "Daily Crypto Market Report — 2026-07-09",
+      "preview": "Base Launches B20 Native Token Standard — Protocol-Level Programmable Tokens",
+      "type": "daily"
+    },
     {
       "id": "2026-07-08",
       "date": "2026-07-08",
