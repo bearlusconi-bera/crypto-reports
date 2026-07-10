@@ -1,6 +1,6 @@
 {
   "latest": "2026-07-10",
-  "count": 85,
+  "count": 86,
   "reports": [
     {
       "id": "2026-07-10",
@@ -656,6 +656,14 @@
       "file": "2026-45-DAY-SUMMARY.md",
       "title": "45-Day Crypto Summary — April 18 to June 2, 2026",
       "preview": "Period: April 18 - June 2, 2026",
+      "type": "other"
+    },
+    {
+      "id": "2026-07-10-EXPANDED-30-DAY-REPORT",
+      "date": "",
+      "file": "2026-07-10-EXPANDED-30-DAY-REPORT.md",
+      "title": "Daily Crypto Market Report — 2026-07-10 — EXPANDED 30-DAY EDITION",
+      "preview": "Coverage: June 10 – July 10, 2026 (synthesized from 27 daily/rollup reports)",
       "type": "other"
     },
     {
