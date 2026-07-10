@@ -1,7 +1,15 @@
 {
-  "latest": "2026-07-09",
-  "count": 84,
+  "latest": "2026-07-10",
+  "count": 85,
   "reports": [
+    {
+      "id": "2026-07-10",
+      "date": "2026-07-10",
+      "file": "2026-07-10.md",
+      "title": "Daily Crypto Market Report — 2026-07-10",
+      "preview": "Circle Wins OCC Approval for National Trust Bank",
+      "type": "daily"
+    },
     {
       "id": "2026-07-09",
       "date": "2026-07-09",
