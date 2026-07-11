@@ -84,15 +84,20 @@
     var daily = manifest.reports.filter(function (r) { return r.type !== "other"; });
     var other = manifest.reports.filter(function (r) { return r.type === "other"; });
 
-    daily.forEach(function (r) { list.appendChild(card(r, false)); });
-
     if (other.length) {
       var label = document.createElement("div");
       label.className = "section-label";
       label.textContent = "Summaries & other";
       list.appendChild(label);
       other.forEach(function (r) { list.appendChild(card(r, true)); });
+
+      var dailyLabel = document.createElement("div");
+      dailyLabel.className = "section-label";
+      dailyLabel.textContent = "Daily reports";
+      list.appendChild(dailyLabel);
     }
+
+    daily.forEach(function (r) { list.appendChild(card(r, false)); });
   }
 
   function card(r, isSummary) {
