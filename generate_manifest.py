@@ -19,6 +19,9 @@ REPORTS_DIR = os.path.join(HERE, "reports")
 OUT_PATH = os.path.join(HERE, "manifest.json")
 
 DATE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})\.md$")
+# Leading date-ish prefix on "other" files, e.g. 2026-07-10-EXPANDED-... or
+# 2026-04-DIGEST. Used only for sorting, newest first.
+OTHER_DATE_RE = re.compile(r"^(\d{4})-(\d{2})(?:-(\d{2}))?")
 H1_RE = re.compile(r"^#\s+(.+?)\s*$")
 NUM_ITEM_RE = re.compile(r"^\*\*\d+\.\s+(.+?)\*\*")  # e.g. "**1. Headline**"
 SKIP_PREFIXES = ("---", ">", "**Generated", "**Sources",
@@ -98,8 +101,24 @@ def build():
                 "title": title, "preview": preview, "type": "other",
             })
 
+    def other_sort_date(name: str) -> str:
+        """Best-effort ISO date from an "other" filename for sorting.
+
+        2026-07-10-EXPANDED-...  -> 2026-07-10
+        2026-04-DIGEST           -> 2026-04-00 (valid month, no day)
+        2026-45-DAY-SUMMARY      -> 2026 (45 is not a month)
+        """
+        m = OTHER_DATE_RE.match(name)
+        if not m:
+            return ""
+        year, month, day = m.group(1), m.group(2), m.group(3)
+        if 1 <= int(month) <= 12:
+            return f"{year}-{month}-{day or '00'}"
+        return year
+
     daily.sort(key=lambda r: r["date"], reverse=True)
-    other.sort(key=lambda r: r["file"], reverse=True)
+    other.sort(key=lambda r: (other_sort_date(r["file"]), r["file"]),
+               reverse=True)
 
     # "latest" is content-derived (newest report date), NOT wall-clock time,
     # so re-running with no new reports produces an identical manifest and

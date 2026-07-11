@@ -651,14 +651,6 @@
       "type": "daily"
     },
     {
-      "id": "2026-45-DAY-SUMMARY",
-      "date": "",
-      "file": "2026-45-DAY-SUMMARY.md",
-      "title": "45-Day Crypto Summary — April 18 to June 2, 2026",
-      "preview": "Period: April 18 - June 2, 2026",
-      "type": "other"
-    },
-    {
       "id": "2026-07-10-EXPANDED-30-DAY-REPORT",
       "date": "",
       "file": "2026-07-10-EXPANDED-30-DAY-REPORT.md",
@@ -688,6 +680,14 @@
       "file": "2026-04-DIGEST.md",
       "title": "April 2026 — Monthly Digest (Top 5 Highlights)",
       "preview": "Compiled from: 19 daily reports (April 1-30, 2026)",
+      "type": "other"
+    },
+    {
+      "id": "2026-45-DAY-SUMMARY",
+      "date": "",
+      "file": "2026-45-DAY-SUMMARY.md",
+      "title": "45-Day Crypto Summary — April 18 to June 2, 2026",
+      "preview": "Period: April 18 - June 2, 2026",
       "type": "other"
     }
   ]
