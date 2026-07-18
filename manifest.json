@@ -1,7 +1,15 @@
 {
-  "latest": "2026-07-11",
-  "count": 87,
+  "latest": "2026-07-18",
+  "count": 88,
   "reports": [
+    {
+      "id": "2026-07-18",
+      "date": "2026-07-18",
+      "file": "2026-07-18.md",
+      "title": "Daily Crypto Market Report — July 18, 2026",
+      "preview": "Morgan Stanley launches spot BTC, ETH, SOL trading on ETRADE",
+      "type": "daily"
+    },
     {
       "id": "2026-07-11",
       "date": "2026-07-11",
