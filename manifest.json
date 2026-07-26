@@ -1,7 +1,15 @@
 {
-  "latest": "2026-07-18",
-  "count": 88,
+  "latest": "2026-07-26",
+  "count": 89,
   "reports": [
+    {
+      "id": "2026-07-26",
+      "date": "2026-07-26",
+      "file": "2026-07-26.md",
+      "title": "Weekly Crypto Market Report — July 19-26, 2026",
+      "preview": "Bitcoin Security Consortium launches with $15M from BlackRock, Fidelity, Coinbase, and Strategy",
+      "type": "daily"
+    },
     {
       "id": "2026-07-18",
       "date": "2026-07-18",
