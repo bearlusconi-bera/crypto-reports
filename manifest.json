@@ -1,7 +1,15 @@
 {
-  "latest": "2026-07-26",
-  "count": 89,
+  "latest": "2026-07-27",
+  "count": 90,
   "reports": [
+    {
+      "id": "2026-07-27",
+      "date": "2026-07-27",
+      "file": "2026-07-27.md",
+      "title": "Daily Crypto Market Report — 2026-07-27",
+      "preview": "Crypto's clearest PMF: CXMT perp on Hyperliquid opens China's biggest IPO since 2010",
+      "type": "daily"
+    },
     {
       "id": "2026-07-26",
       "date": "2026-07-26",
