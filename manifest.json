@@ -1,7 +1,15 @@
 {
-  "latest": "2026-07-27",
-  "count": 90,
+  "latest": "2026-07-28",
+  "count": 91,
   "reports": [
+    {
+      "id": "2026-07-28",
+      "date": "2026-07-28",
+      "file": "2026-07-28.md",
+      "title": "Daily Crypto Market Report — 2026-07-28",
+      "preview": "Lido Core 2026 — biggest ETH staking upgrade since V2, consolidating 8M+ ETH",
+      "type": "daily"
+    },
     {
       "id": "2026-07-27",
       "date": "2026-07-27",
