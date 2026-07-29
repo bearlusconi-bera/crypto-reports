@@ -1,7 +1,15 @@
 {
-  "latest": "2026-07-28",
-  "count": 91,
+  "latest": "2026-07-29",
+  "count": 92,
   "reports": [
+    {
+      "id": "2026-07-29",
+      "date": "2026-07-29",
+      "file": "2026-07-29.md",
+      "title": "Daily Crypto Market Report — 2026-07-29",
+      "preview": "Morgan Stanley launches Ethereum Staking ETP — $2T AUM manager enters ETH staking",
+      "type": "daily"
+    },
     {
       "id": "2026-07-28",
       "date": "2026-07-28",
