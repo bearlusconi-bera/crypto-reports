@@ -1,7 +1,15 @@
 {
-  "latest": "2026-07-29",
-  "count": 92,
+  "latest": "2026-07-30",
+  "count": 93,
   "reports": [
+    {
+      "id": "2026-07-30",
+      "date": "2026-07-30",
+      "file": "2026-07-30.md",
+      "title": "Daily Crypto Market Report — 2026-07-30",
+      "preview": "Fed holds rates at 3.50–3.75% — crypto shrugs, equities sell off",
+      "type": "daily"
+    },
     {
       "id": "2026-07-29",
       "date": "2026-07-29",
