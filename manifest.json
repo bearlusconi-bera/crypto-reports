@@ -1,7 +1,15 @@
 {
-  "latest": "2026-07-30",
-  "count": 93,
+  "latest": "2026-08-02",
+  "count": 94,
   "reports": [
+    {
+      "id": "2026-08-02",
+      "date": "2026-08-02",
+      "file": "2026-08-02.md",
+      "title": "Daily Crypto Market Report — 2026-08-02",
+      "preview": "Uniswap Facilitated $12.8B on Robinhood Chain in One Month",
+      "type": "daily"
+    },
     {
       "id": "2026-07-30",
       "date": "2026-07-30",
