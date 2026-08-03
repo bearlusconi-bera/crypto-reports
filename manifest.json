@@ -1,7 +1,15 @@
 {
-  "latest": "2026-08-02",
-  "count": 94,
+  "latest": "2026-08-03",
+  "count": 95,
   "reports": [
+    {
+      "id": "2026-08-03",
+      "date": "2026-08-03",
+      "file": "2026-08-03.md",
+      "title": "Daily Crypto Market Report — 2026-08-03 (Low Activity Edition)",
+      "preview": "BTC and ETH Pull Back on Weekend Thin Liquidity",
+      "type": "daily"
+    },
     {
       "id": "2026-08-02",
       "date": "2026-08-02",
