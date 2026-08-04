@@ -1,7 +1,15 @@
 {
-  "latest": "2026-08-03",
-  "count": 95,
+  "latest": "2026-08-04",
+  "count": 96,
   "reports": [
+    {
+      "id": "2026-08-04",
+      "date": "2026-08-04",
+      "file": "2026-08-04.md",
+      "title": "Daily Crypto Market Report — 2026-08-04",
+      "preview": "BlackRock Launches Two Tokenized Money Market Funds on Ethereum AND Solana",
+      "type": "daily"
+    },
     {
       "id": "2026-08-03",
       "date": "2026-08-03",
