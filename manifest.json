@@ -1,7 +1,15 @@
 {
-  "latest": "2026-08-04",
-  "count": 96,
+  "latest": "2026-08-05",
+  "count": 97,
   "reports": [
+    {
+      "id": "2026-08-05",
+      "date": "2026-08-05",
+      "file": "2026-08-05.md",
+      "title": "Daily Crypto Market Report — 2026-08-05",
+      "preview": "BlackRock Tokenizes $311B European Money Market Funds on Ethereum via J.P. Morgan",
+      "type": "daily"
+    },
     {
       "id": "2026-08-04",
       "date": "2026-08-04",
