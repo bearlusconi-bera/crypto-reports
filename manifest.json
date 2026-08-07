@@ -1,7 +1,15 @@
 {
-  "latest": "2026-08-06",
-  "count": 98,
+  "latest": "2026-08-07",
+  "count": 99,
   "reports": [
+    {
+      "id": "2026-08-07",
+      "date": "2026-08-07",
+      "file": "2026-08-07.md",
+      "title": "Daily Crypto Market Report — 2026-08-07",
+      "preview": "Fidelity Digital Assets Announces Fidelity Digital Dollar (FIDD) Stablecoin",
+      "type": "daily"
+    },
     {
       "id": "2026-08-06",
       "date": "2026-08-06",
