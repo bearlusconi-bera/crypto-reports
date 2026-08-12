@@ -1,7 +1,15 @@
 {
-  "latest": "2026-08-10",
-  "count": 100,
+  "latest": "2026-08-12",
+  "count": 101,
   "reports": [
+    {
+      "id": "2026-08-12",
+      "date": "2026-08-12",
+      "file": "2026-08-12.md",
+      "title": "Daily Crypto Market Report — 2026-08-12",
+      "preview": "SEC Prepares First-Ever Formal Crypto Rulemaking",
+      "type": "daily"
+    },
     {
       "id": "2026-08-10",
       "date": "2026-08-10",
