@@ -1,7 +1,15 @@
 {
-  "latest": "2026-08-12",
-  "count": 101,
+  "latest": "2026-08-13",
+  "count": 102,
   "reports": [
+    {
+      "id": "2026-08-13",
+      "date": "2026-08-13",
+      "file": "2026-08-13.md",
+      "title": "Daily Crypto Market Report — 2026-08-13",
+      "preview": "CPI Prints Exactly In-Line — Fed Hawkish Risk Drops",
+      "type": "daily"
+    },
     {
       "id": "2026-08-12",
       "date": "2026-08-12",
