@@ -1,7 +1,15 @@
 {
-  "latest": "2026-08-13",
-  "count": 102,
+  "latest": "2026-08-14",
+  "count": 103,
   "reports": [
+    {
+      "id": "2026-08-14",
+      "date": "2026-08-14",
+      "file": "2026-08-14.md",
+      "title": "Daily Crypto Market Report — 2026-08-14",
+      "preview": "Robinhood Chain: 190+ Stock Tokens Live — Yesterday's Teaser Revealed",
+      "type": "daily"
+    },
     {
       "id": "2026-08-13",
       "date": "2026-08-13",
