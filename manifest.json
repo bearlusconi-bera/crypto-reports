@@ -1,7 +1,15 @@
 {
-  "latest": "2026-08-14",
-  "count": 103,
+  "latest": "2026-08-17",
+  "count": 104,
   "reports": [
+    {
+      "id": "2026-08-17",
+      "date": "2026-08-17",
+      "file": "2026-08-17.md",
+      "title": "Daily Crypto Market Report — 2026-08-17",
+      "preview": "Vitalik Outlines Ethereum's UTXO-Style Hyperscaling Strategy",
+      "type": "daily"
+    },
     {
       "id": "2026-08-14",
       "date": "2026-08-14",
