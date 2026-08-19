@@ -1,7 +1,15 @@
 {
-  "latest": "2026-08-17",
-  "count": 104,
+  "latest": "2026-08-19",
+  "count": 105,
   "reports": [
+    {
+      "id": "2026-08-19",
+      "date": "2026-08-19",
+      "file": "2026-08-19.md",
+      "title": "Daily Crypto Market Report — 2026-08-19",
+      "preview": "SEC Proposes \"Regulation Crypto Assets\" — First Tailored Fundraising Framework",
+      "type": "daily"
+    },
     {
       "id": "2026-08-17",
       "date": "2026-08-17",
