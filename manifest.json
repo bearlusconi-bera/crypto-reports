@@ -1,7 +1,15 @@
 {
-  "latest": "2026-08-19",
-  "count": 105,
+  "latest": "2026-08-21",
+  "count": 106,
   "reports": [
+    {
+      "id": "2026-08-21",
+      "date": "2026-08-21",
+      "file": "2026-08-21.md",
+      "title": "Daily Crypto Market Report — 2026-08-21",
+      "preview": "Bitcoin Explodes Past $70K to $76.7K — $3B in Shorts Liquidated",
+      "type": "daily"
+    },
     {
       "id": "2026-08-19",
       "date": "2026-08-19",
