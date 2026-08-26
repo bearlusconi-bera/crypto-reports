@@ -1,7 +1,23 @@
 {
-  "latest": "2026-08-21",
-  "count": 106,
+  "latest": "2026-08-26",
+  "count": 108,
   "reports": [
+    {
+      "id": "2026-08-26",
+      "date": "2026-08-26",
+      "file": "2026-08-26.md",
+      "title": "Daily Crypto Market Report — August 26, 2026",
+      "preview": "Citadel Securities + DTCC Partner with LayerZero on ATLAS Exchange",
+      "type": "daily"
+    },
+    {
+      "id": "2026-08-24",
+      "date": "2026-08-24",
+      "file": "2026-08-24.md",
+      "title": "Daily Crypto Market Report — 2026-08-24 (Low Activity Edition)",
+      "preview": "Spot Crypto ETFs Pull In $2.6B Weekly — Strongest Since Oct 2025",
+      "type": "daily"
+    },
     {
       "id": "2026-08-21",
       "date": "2026-08-21",
