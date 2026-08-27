@@ -1,7 +1,15 @@
 {
-  "latest": "2026-08-26",
-  "count": 108,
+  "latest": "2026-08-27",
+  "count": 109,
   "reports": [
+    {
+      "id": "2026-08-27",
+      "date": "2026-08-27",
+      "file": "2026-08-27.md",
+      "title": "Daily Crypto Market Report — August 27, 2026",
+      "preview": "Robinhood Stock Tokens Hit $1.5B in DEX Volume",
+      "type": "daily"
+    },
     {
       "id": "2026-08-26",
       "date": "2026-08-26",
