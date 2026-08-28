@@ -1,7 +1,15 @@
 {
-  "latest": "2026-08-27",
-  "count": 109,
+  "latest": "2026-08-28",
+  "count": 110,
   "reports": [
+    {
+      "id": "2026-08-28",
+      "date": "2026-08-28",
+      "file": "2026-08-28.md",
+      "title": "Daily Crypto Market Report — August 28, 2026",
+      "preview": "Charles Schwab Adds SOL, AVAX, and LINK to Crypto Trading — ~40M Accounts",
+      "type": "daily"
+    },
     {
       "id": "2026-08-27",
       "date": "2026-08-27",
