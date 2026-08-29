@@ -1,7 +1,15 @@
 {
-  "latest": "2026-08-28",
-  "count": 110,
+  "latest": "2026-08-29",
+  "count": 111,
   "reports": [
+    {
+      "id": "2026-08-29",
+      "date": "2026-08-29",
+      "file": "2026-08-29.md",
+      "title": "Daily Crypto Market Report — August 29, 2026",
+      "preview": "Solana Double Disinflation Vote Passes by a Hair — 67% Threshold Cleared",
+      "type": "daily"
+    },
     {
       "id": "2026-08-28",
       "date": "2026-08-28",
