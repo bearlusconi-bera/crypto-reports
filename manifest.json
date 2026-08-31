@@ -1,7 +1,15 @@
 {
-  "latest": "2026-08-30",
-  "count": 112,
+  "latest": "2026-08-31",
+  "count": 113,
   "reports": [
+    {
+      "id": "2026-08-31",
+      "date": "2026-08-31",
+      "file": "2026-08-31.md",
+      "title": "Daily Crypto Market Report — August 31, 2026 (Weekend Edition)",
+      "preview": "RyanWatkins_ (Syncracy): \"Social Trading Is the TikTok of Finance\" — Major Research Essay",
+      "type": "daily"
+    },
     {
       "id": "2026-08-30",
       "date": "2026-08-30",
