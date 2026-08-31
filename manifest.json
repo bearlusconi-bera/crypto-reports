@@ -1,7 +1,15 @@
 {
-  "latest": "2026-08-29",
-  "count": 111,
+  "latest": "2026-08-30",
+  "count": 112,
   "reports": [
+    {
+      "id": "2026-08-30",
+      "date": "2026-08-30",
+      "file": "2026-08-30.md",
+      "title": "Daily Crypto Market Report — August 30, 2026 (Weekend Edition)",
+      "preview": "JustDeauIt: \"The Coming Crypto Cycle Could Be Much Larger Than the Last\" — Druckenmiller WSJ Signal",
+      "type": "daily"
+    },
     {
       "id": "2026-08-29",
       "date": "2026-08-29",
