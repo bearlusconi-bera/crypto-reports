@@ -1,7 +1,15 @@
 {
-  "latest": "2026-08-31",
-  "count": 113,
+  "latest": "2026-09-01",
+  "count": 114,
   "reports": [
+    {
+      "id": "2026-09-01",
+      "date": "2026-09-01",
+      "file": "2026-09-01.md",
+      "title": "Daily Crypto Market Report — September 1, 2026",
+      "preview": "Tectonic Exploit Drains ~$75M from Cronos — Chain Halted",
+      "type": "daily"
+    },
     {
       "id": "2026-08-31",
       "date": "2026-08-31",
