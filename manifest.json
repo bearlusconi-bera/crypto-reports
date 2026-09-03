@@ -1,7 +1,15 @@
 {
-  "latest": "2026-09-01",
-  "count": 114,
+  "latest": "2026-09-03",
+  "count": 115,
   "reports": [
+    {
+      "id": "2026-09-03",
+      "date": "2026-09-03",
+      "file": "2026-09-03.md",
+      "title": "Daily Crypto Market Report — 2026-09-03",
+      "preview": "Robinhood Chain Hits 2-Month Milestones — $34.6B DEX Volume, 190+ Stock Tokens",
+      "type": "daily"
+    },
     {
       "id": "2026-09-01",
       "date": "2026-09-01",
