@@ -1,7 +1,15 @@
 {
-  "latest": "2026-09-03",
-  "count": 115,
+  "latest": "2026-09-04",
+  "count": 116,
   "reports": [
+    {
+      "id": "2026-09-04",
+      "date": "2026-09-04",
+      "file": "2026-09-04.md",
+      "title": "Daily Crypto Market Report — 2026-09-04",
+      "preview": "Broad Risk-On Rally — BTC $80.8K, Crypto Stocks Surge, FOMC Hike Odds Drop",
+      "type": "daily"
+    },
     {
       "id": "2026-09-03",
       "date": "2026-09-03",
