@@ -1,7 +1,15 @@
 {
-  "latest": "2026-09-05",
-  "count": 117,
+  "latest": "2026-09-06",
+  "count": 118,
   "reports": [
+    {
+      "id": "2026-09-06",
+      "date": "2026-09-06",
+      "file": "2026-09-06.md",
+      "title": "Daily Crypto Market Report — 2026-09-06",
+      "preview": "Vitalik Deep Dive on EIP-8141 Frames — Ethereum's Privacy & Scaling Roadmap Quietly Advancing",
+      "type": "daily"
+    },
     {
       "id": "2026-09-05",
       "date": "2026-09-05",
