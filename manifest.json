@@ -1,7 +1,15 @@
 {
-  "latest": "2026-09-09",
-  "count": 120,
+  "latest": "2026-09-10",
+  "count": 121,
   "reports": [
+    {
+      "id": "2026-09-10",
+      "date": "2026-09-10",
+      "file": "2026-09-10.md",
+      "title": "Daily Crypto Market Report — 2026-09-10",
+      "preview": "Prices captured 2026-09-10. Crypto via CoinGecko; SPX via Yahoo Finance (^GSPC).",
+      "type": "daily"
+    },
     {
       "id": "2026-09-09",
       "date": "2026-09-09",
