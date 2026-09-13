@@ -1,7 +1,15 @@
 {
-  "latest": "2026-09-10",
-  "count": 121,
+  "latest": "2026-09-13",
+  "count": 122,
   "reports": [
+    {
+      "id": "2026-09-13",
+      "date": "2026-09-13",
+      "file": "2026-09-13.md",
+      "title": "Daily Crypto Market Report — 2026-09-13",
+      "preview": "Clarity Act Senate Vote Monday (Sep 15) — Crypto's Biggest Legislative Bet",
+      "type": "daily"
+    },
     {
       "id": "2026-09-10",
       "date": "2026-09-10",
