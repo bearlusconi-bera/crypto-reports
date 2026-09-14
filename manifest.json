@@ -1,7 +1,15 @@
 {
-  "latest": "2026-09-13",
-  "count": 122,
+  "latest": "2026-09-14",
+  "count": 123,
   "reports": [
+    {
+      "id": "2026-09-14",
+      "date": "2026-09-14",
+      "file": "2026-09-14.md",
+      "title": "Daily Crypto Market Report — 2026-09-14",
+      "preview": "ZKsync Open-Sources Prividium Core — Deutsche Bundesbank First to Deploy",
+      "type": "daily"
+    },
     {
       "id": "2026-09-13",
       "date": "2026-09-13",
