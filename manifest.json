@@ -1,7 +1,15 @@
 {
-  "latest": "2026-09-14",
-  "count": 123,
+  "latest": "2026-09-15",
+  "count": 124,
   "reports": [
+    {
+      "id": "2026-09-15",
+      "date": "2026-09-15",
+      "file": "2026-09-15.md",
+      "title": "Daily Crypto Market Report — 2026-09-15",
+      "preview": "Clarity Act Cloture Vote TODAY — Lummis Unveils \"Final\" Draft, Trump Accepts Ethics Limits",
+      "type": "daily"
+    },
     {
       "id": "2026-09-14",
       "date": "2026-09-14",
