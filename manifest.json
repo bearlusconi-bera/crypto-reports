@@ -1,7 +1,15 @@
 {
-  "latest": "2026-09-15",
-  "count": 124,
+  "latest": "2026-09-16",
+  "count": 125,
   "reports": [
+    {
+      "id": "2026-09-16",
+      "date": "2026-09-16",
+      "file": "2026-09-16.md",
+      "title": "Daily Crypto Market Report — 2026-09-16",
+      "preview": "Clarity Act Fails — Senate Blocks Cloture, DeFi Must \"Win Through Adoption\"",
+      "type": "daily"
+    },
     {
       "id": "2026-09-15",
       "date": "2026-09-15",
