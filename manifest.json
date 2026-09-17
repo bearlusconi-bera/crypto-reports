@@ -1,7 +1,15 @@
 {
-  "latest": "2026-09-16",
-  "count": 125,
+  "latest": "2026-09-17",
+  "count": 126,
   "reports": [
+    {
+      "id": "2026-09-17",
+      "date": "2026-09-17",
+      "file": "2026-09-17.md",
+      "title": "Daily Crypto Market Report — 2026-09-17",
+      "preview": "Fed Hikes 25bps to 3.75–4.00% — First Since 2023, Crypto Bounces",
+      "type": "daily"
+    },
     {
       "id": "2026-09-16",
       "date": "2026-09-16",
