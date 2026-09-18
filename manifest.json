@@ -1,7 +1,15 @@
 {
-  "latest": "2026-09-17",
-  "count": 126,
+  "latest": "2026-09-18",
+  "count": 127,
   "reports": [
+    {
+      "id": "2026-09-18",
+      "date": "2026-09-18",
+      "file": "2026-09-18.md",
+      "title": "Daily Crypto Market Report — 2026-09-18",
+      "preview": "SEC Innovation Exemption for Tokenized Stocks — Onchain Equity Trading Gets a Legal Lane",
+      "type": "daily"
+    },
     {
       "id": "2026-09-17",
       "date": "2026-09-17",
