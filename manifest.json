@@ -1,7 +1,15 @@
 {
-  "latest": "2026-09-18",
-  "count": 127,
+  "latest": "2026-09-19",
+  "count": 128,
   "reports": [
+    {
+      "id": "2026-09-19",
+      "date": "2026-09-19",
+      "file": "2026-09-19.md",
+      "title": "Daily Crypto Market Report — 2026-09-19",
+      "preview": "Kraken/Payward Files Single-Stock Perpetual Futures for 10 U.S. Equities + Nasdaq Ventures Invests $100M",
+      "type": "daily"
+    },
     {
       "id": "2026-09-18",
       "date": "2026-09-18",
