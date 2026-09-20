@@ -1,7 +1,15 @@
 {
-  "latest": "2026-09-19",
-  "count": 128,
+  "latest": "2026-09-20",
+  "count": 129,
   "reports": [
+    {
+      "id": "2026-09-20",
+      "date": "2026-09-20",
+      "file": "2026-09-20.md",
+      "title": "Daily Crypto Market Report — 2026-09-20",
+      "preview": "Deutsche Bank Launches Ethereum-Native Institutional Custody Service",
+      "type": "daily"
+    },
     {
       "id": "2026-09-19",
       "date": "2026-09-19",
