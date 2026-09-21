@@ -1,7 +1,15 @@
 {
-  "latest": "2026-09-20",
-  "count": 129,
+  "latest": "2026-09-21",
+  "count": 130,
   "reports": [
+    {
+      "id": "2026-09-21",
+      "date": "2026-09-21",
+      "file": "2026-09-21.md",
+      "title": "Daily Crypto Market Report — 2026-09-21",
+      "preview": "Bitcoin Clears $85,000 — $635M in Short Liquidations",
+      "type": "daily"
+    },
     {
       "id": "2026-09-20",
       "date": "2026-09-20",
