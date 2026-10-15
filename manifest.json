@@ -1,7 +1,15 @@
 {
-  "latest": "2026-09-25",
-  "count": 132,
+  "latest": "2026-10-15",
+  "count": 133,
   "reports": [
+    {
+      "id": "2026-10-15",
+      "date": "2026-10-15",
+      "file": "2026-10-15.md",
+      "title": "Daily Crypto Market Report — 2026-10-15",
+      "preview": "Prices captured 2026-10-15. BTC and ETH via CoinGecko; SPX is the latest available close (2026-10-14), from AP.",
+      "type": "daily"
+    },
     {
       "id": "2026-09-25",
       "date": "2026-09-25",
