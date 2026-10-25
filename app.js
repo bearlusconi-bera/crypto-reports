@@ -1,4 +1,4 @@
-/* Daily Crypto Reports — client-side SPA (no build step).
+/* Weekly Crypto Reports — client-side SPA (no build step).
  * Reads manifest.json, renders a list, and renders individual reports
  * from reports/*.md using marked + DOMPurify. Hash routing: #/<date>. */
 
@@ -38,7 +38,7 @@
     els.reportView.innerHTML = "";
     els.listView.hidden = false;
     els.backBtn.hidden = true;
-    els.title.textContent = "📈 Daily Crypto Reports";
+    els.title.textContent = "📈 Weekly Crypto Reports";
     if (manifest && manifest.reports) {
       els.count.textContent = manifest.reports.length + " reports";
     }
@@ -61,10 +61,13 @@
     el.className = "freshness";
     if (d === null) { el.hidden = true; return; }
     el.hidden = false;
+    // Weekly cadence (every Saturday): up to 7 days old is on schedule, a few
+    // days late is a warning, and more than 10 days means a run was missed.
     var label, cls;
     if (d <= 0) { label = "Updated today"; cls = "fresh-ok"; }
     else if (d === 1) { label = "Updated yesterday"; cls = "fresh-ok"; }
-    else if (d <= 3) { label = "Updated " + d + " days ago"; cls = "fresh-warn"; }
+    else if (d <= 7) { label = "Updated " + d + " days ago"; cls = "fresh-ok"; }
+    else if (d <= 10) { label = "Updated " + d + " days ago"; cls = "fresh-warn"; }
     else { label = "⚠ No new report in " + d + " days"; cls = "fresh-stale"; }
     el.classList.add(cls);
     el.textContent = "Latest: " + fmtDate(latest) + " · " + label;
@@ -93,7 +96,7 @@
 
       var dailyLabel = document.createElement("div");
       dailyLabel.className = "section-label";
-      dailyLabel.textContent = "Daily reports";
+      dailyLabel.textContent = "Reports";
       list.appendChild(dailyLabel);
     }
 

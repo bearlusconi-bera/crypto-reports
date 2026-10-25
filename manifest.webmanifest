@@ -1,7 +1,7 @@
 {
-  "name": "Daily Crypto Reports",
+  "name": "Weekly Crypto Reports",
   "short_name": "Crypto Reports",
-  "description": "Daily crypto market intelligence reports.",
+  "description": "Weekly crypto market intelligence reports, published every Saturday.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

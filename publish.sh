@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# Publish daily crypto reports to the GitHub Pages site.
+# Publish weekly crypto reports to the GitHub Pages site.
 #
 # Idempotent: copies *.md from the vault into ./reports, regenerates
 # manifest.json, and commits + pushes ONLY when something changed.
-# Safe to run manually or from the daily scheduled task.
+# Safe to run manually or from the weekly scheduled task (Saturday 11:00).
 set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
