@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""Generate manifest.json for the Daily Crypto Reports site.
+"""Generate manifest.json for the Weekly Crypto Reports site.
 
 Scans ./reports/*.md and produces a manifest the SPA reads:
-  - daily reports (filenames like 2026-06-05.md) sorted by date, newest first
+  - dated reports (filenames like 2026-06-05.md: the weekly Saturday reports
+    and the earlier daily archive) sorted by date, newest first. Their
+    manifest type stays "daily" so existing clients keep working.
   - everything else (e.g. 2026-45-DAY-SUMMARY.md) listed afterwards as "other"
 
 For each report it extracts a title (first "# " heading) and a short preview.
@@ -24,6 +26,10 @@ DATE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})\.md$")
 OTHER_DATE_RE = re.compile(r"^(\d{4})-(\d{2})(?:-(\d{2}))?")
 H1_RE = re.compile(r"^#\s+(.+?)\s*$")
 NUM_ITEM_RE = re.compile(r"^\*\*\d+\.\s+(.+?)\*\*")  # e.g. "**1. Headline**"
+# Unindented "1. **Headline**" list items count only inside the Top section
+# ("## 1. Top 10 Things…"), so numbered lists elsewhere never become previews.
+TOP_LIST_ITEM_RE = re.compile(r"^\d+\.\s+\*\*(.+?)\*\*")
+TOP_HEADING_RE = re.compile(r"^##\s+(?:\d+\.\s*)?Top\b", re.IGNORECASE)
 SKIP_PREFIXES = ("---", ">", "**Generated", "**Sources",
                  "*Report cost", "*Data sources", "*Generated")
 
@@ -47,6 +53,7 @@ def extract_title_and_preview(path: str, fallback: str):
 
     fallback = ""
     got_title = False
+    in_top = False
     for line in lines:
         s = line.strip()
         if not got_title:
@@ -55,10 +62,13 @@ def extract_title_and_preview(path: str, fallback: str):
                 title = clean(m.group(1))
                 got_title = True
             continue
+        if s.startswith("## "):
+            in_top = bool(TOP_HEADING_RE.match(s))
+            continue
         if not s or s.startswith(SKIP_PREFIXES):
             continue
-        # Best preview: the first numbered "Top 5" headline.
-        num = NUM_ITEM_RE.match(s)
+        # Best preview: the first numbered Top-list headline.
+        num = NUM_ITEM_RE.match(s) or (in_top and TOP_LIST_ITEM_RE.match(line))
         if num:
             preview = clean(num.group(1))
             break
